@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>使用jekyll+Github Pages创建一个blog</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <nav>
+  
+    <a href="/" >Home</a>
+  
+    <a href="/about.html" >About</a>
+  
+    <a href="/blog.html" >Blog</a>
+  
+    <a href="/staff.html" >Staff</a>
+  
+</nav>
+    <h1>使用jekyll+Github Pages创建一个blog</h1>
+
+<p>
+  01 Jun 2023
+  
+  
+</p>
+
+<h4 id="使用jekyll创建一个blog">使用jekyll创建一个blog：</h4>
+<p>1.安装Ruby+Devkit<br />
+2.安装jekyll和bundler：<br />
+                     <code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code><br />
+3.使用jekyll创建一个blog：<br />
+                     <code class="language-plaintext highlighter-rouge">jekyll new myblog</code><br />
+4.输入：<br />
+                     <code class="language-plaintext highlighter-rouge">jekyll serve</code>     <br />
+便可以在在本地localhost：4000查看该blog</p>
+
+<h4 id="将blog部署到github-pages">将blog部署到Github Pages：</h4>
+<p>1.在github创建一个空仓，并将仓库命名为：<br />
+                     <code class="language-plaintext highlighter-rouge">&lt;username&gt;.github.io</code><br />
+2.将本地blog与Github仓库关联，在blog项目中输入：<br />
+                     <code class="language-plaintext highlighter-rouge">git init</code><br />
+                     <code class="language-plaintext highlighter-rouge">git add .</code><br />
+                     <code class="language-plaintext highlighter-rouge">git commit -m "first commit"</code><br />
+                     <code class="language-plaintext highlighter-rouge">git remote add origin https://github.com/username/username.github.io.git</code><br />
+                     <code class="language-plaintext highlighter-rouge">git push -u origin master</code><br />
+此时，便可以在浏览器输入<code class="language-plaintext highlighter-rouge">username.github.io</code>查看该blog</p>
+
+
+  </body>
+</html>
